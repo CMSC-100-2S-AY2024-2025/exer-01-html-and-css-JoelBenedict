@@ -3,3 +3,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.navBar{
+  display: inline-block;
+  background-color:rgb(108, 216, 248);
+  color: white;
+  height: 100px;
+  width: 100%;
+}
