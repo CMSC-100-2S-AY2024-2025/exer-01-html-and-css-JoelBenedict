@@ -1,13 +1,42 @@
-.Logo{
+#page{
+  background-color:rgb(168, 252, 255);
+}
+
+#MainLogo{
   display:block;
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
+  height: 150px;
 }
 
-.navBar{
+#navBar{
   display: inline-block;
-  background-color:rgb(108, 216, 248);
+  background-color:rgb(68, 232, 238);
   color: white;
   height: 100px;
   width: 100%;
+}
+
+.content{
+  height: 2000px;
+}
+
+.footer{
+  display: flex;
+  background-color: rgb(68, 232, 238);
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+}
+
+.FooterLogo{
+  align-self: center;
+  margin-left: 75px;
+  width: 200px;
+  height: 100px;
+}
+
+.FooterText{
+  align-self: auto;
 }
