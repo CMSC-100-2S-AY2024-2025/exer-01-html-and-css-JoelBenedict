@@ -22,6 +22,16 @@
   height: 2000px;
 }
 
+.featuredPhoto{
+  display: block;
+  background-color: white;
+  height: 1000px;
+  width: 90%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer{
   display: flex;
   background-color: rgb(68, 232, 238);
