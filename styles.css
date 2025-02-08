@@ -21,12 +21,13 @@
 .nav{
   background-color: rgb(30, 30, 30);
   width: 100%;
-  text-align: center;
 }
 
 .navBar ul{
   list-style-type: none;
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
@@ -41,20 +42,46 @@
   text-decoration: none;
   padding: 15px;
   display: inline-block;
+  transition: all .3s linear;
 }
 
 .content{
   height: 2000px;
 }
 
-.featuredPhoto{
-  display: block;
-  background-color: white;
-  height: 1000px;
-  width: 90%;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+
+#selfieContainer{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Lexend;
+  font-size: 30px;
+}
+
+.name{
+  position: absolute;
+  bottom: 25px;
+  left: 250px;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, visibility .2s;
+}
+
+#featuredPhoto{
+  width: 70%;
+  margin-top: 50px;
+  justify-self: center;
+  transition: all .2s linear;
+}
+
+#featuredPhoto:hover{
+  opacity: .5;
+}
+
+#featuredPhoto:hover~.name{
+  visibility: visible;
+  opacity: 1;
 }
 
 .navBar li{
@@ -82,4 +109,9 @@
   margin-left: 30px;
   align-self: center;
   font-family: Lexend;
+}
+
+#Back{
+  text-decoration: none;
+  color: gold;
 }
