@@ -8,19 +8,34 @@
   src: url(fonts/Lexend-Medium.ttf);
 }
 
+.bgContainer{
+
+  background-image: url("images/logoBG.png");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: -75px -90px;
+}
+
+.logoContainer{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
 #MainLogo{
   display:block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   width: 87.5px;
   height: 150px;
 }
 
 .nav{
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(12, 12, 12);
   width: 100%;
+  margin-top: 25px;
 }
 
 .navBar ul{
