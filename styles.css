@@ -1,21 +1,46 @@
 #page{
-  background-color:rgb(168, 252, 255);
+  background-color:rgb(20, 20, 20);
+  margin: 0;
+}
+
+@font-face {
+  font-family: Lexend;
+  src: url(fonts/Lexend-Medium.ttf);
 }
 
 #MainLogo{
   display:block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 87.5px;
   height: 150px;
 }
 
-#navBar{
-  display: inline-block;
-  background-color:rgb(68, 232, 238);
-  color: white;
-  height: 100px;
+.nav{
+  background-color: rgb(30, 30, 30);
   width: 100%;
+  text-align: center;
+}
+
+.navBar ul{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.navBar a:hover{
+  color: gold;
+}
+
+.navBar a{
+  color: white;
+  font-family: Lexend;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
 }
 
 .content{
@@ -27,14 +52,19 @@
   background-color: white;
   height: 1000px;
   width: 90%;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.navBar li{
+  display: inline-block;
+  align-self: center;
+}
+
 .footer{
   display: flex;
-  background-color: rgb(68, 232, 238);
+  background-color:rgb(30, 30, 30);
   height: 200px;
   width: 100%;
   bottom: 0;
@@ -42,11 +72,14 @@
 
 .FooterLogo{
   align-self: center;
-  margin-left: 75px;
-  width: 200px;
+  margin-left: 50px;
+  width: 60px;
   height: 100px;
 }
 
-.FooterText{
-  align-self: auto;
+.footer .footerText{
+  color: white;
+  margin-left: 30px;
+  align-self: center;
+  font-family: Lexend;
 }
