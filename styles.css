@@ -1,6 +1,7 @@
 #page{
   background-color:rgb(20, 20, 20);
   margin: 0;
+  font-family: Lexend;
 }
 
 @font-face {
@@ -9,27 +10,29 @@
 }
 
 .bgContainer{
-
   background-image: url("images/logoBG.png");
-  background-size: 110%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: -75px -90px;
+  background-position: 50% 85%;
 }
 
 .logoContainer{
   position: relative;
+  display: flex;
+  align-items: center;
   left: 0;
   top: 0;
 }
 
-#MainLogo{
+.logoContainer #MainLogo{
   display:block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
+  transform: translateY(5%);
   width: 87.5px;
-  height: 150px;
+  height: 10%;
 }
 
 .nav{
@@ -49,6 +52,7 @@
 
 .navBar a:hover{
   color: gold;
+  font-size: larger;
 }
 
 .navBar a{
@@ -57,35 +61,35 @@
   text-decoration: none;
   padding: 15px;
   display: inline-block;
-  transition: all .3s linear;
+  transition: all .2s linear;
 }
 
-.content{
-  height: 2000px;
+.navBar li{
+  display: inline-block;
+  align-self: center;
 }
-
 
 #selfieContainer{
   position: relative;
   text-align: center;
-  color: white;
+  color: gold;
   font-family: Lexend;
-  font-size: 30px;
+  font-size: 150%;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .name{
-  position: absolute;
-  bottom: 25px;
-  left: 250px;
+  position: relative;
+  bottom: 0;
+  left: 0;
   visibility: hidden;
   opacity: 0;
-
   transition: opacity .2s, visibility .2s;
 }
 
 #featuredPhoto{
   width: 70%;
-  margin-top: 50px;
   justify-self: center;
   transition: all .2s linear;
 }
@@ -99,9 +103,36 @@
   opacity: 1;
 }
 
-.navBar li{
-  display: inline-block;
-  align-self: center;
+#projectContainer {
+  background-color: rgb(15, 15, 15);
+  padding: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#projectContainer .projectText {
+  font-size: 250%;
+  color: white;
+  margin-bottom: 20px; 
+}
+
+.projectImages {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  margin-bottom: 25px;
+}
+
+.projectImages img {
+  width: 30%; 
+  height: auto; 
+  transition: all 0.2s linear; 
+}
+
+.projectImages img:hover {
+  transform: scale(1.05); 
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 .footer{
